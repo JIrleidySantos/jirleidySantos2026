@@ -21,29 +21,37 @@ public class JirleidySantos2026 {
         int contadorPrecio;
         
         Scanner sc = new Scanner(System.in);
-     
-        
-        
-        
- 
-    for (int i = 1; i <5; i++){
+        for (int i = 1; i <5; i++){
     
         System.out.println("ingrese el precio de los productos ");
         precios[i]=sc.nextFloat();
     }    
-        int opcion=0;
+        System.out.println("--Ingrese unaopcion del 1 al 5 --");
         System.out.println("1. Calcular el Promedio de los productos:" );
         System.out.println("2. Calcular la nota mas alto y mas bajo de los productos:" );
         System.out.println("3. Calcular la nota aprobada y reprobada de los productos:" );
         System.out.println("4. Salir:" );
       
-        System.out.println("selecciona una opccion");
-        switch (opcion){
+        int menu=sc.nextInt();
+        
+        switch (menu){
             case 1:
-                System.out.println("1. Calcular el Promedio de los productos:" );
-                float suma;
+                float suma=0; 
+                System.out.println("opcion 1 " );
                 for (int i = 1; i <5; i++){
+                    suma=precios[i]+suma;       
+                }        
             break;
+            case 2:
+                System.out.println("opcion 2 " );
+            break;
+            case 3:
+                System.out.println("opcion 3 " );
+            break;
+            case 4: 
+                System.out.println("opcion 4 " );
+            break;
+            
                 
         }
  
