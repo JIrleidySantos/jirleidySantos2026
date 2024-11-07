@@ -14,11 +14,17 @@ public class JirleidySantos2026 {
 
     public static void main(String[] args) {
         
-        Scanner sc = new Scanner(System.in);
-     
         float [] precios = new float [5] ;
+        float promedioPrecios;
         float mayor;
         float menor;
+        int contadorPrecio;
+        
+        Scanner sc = new Scanner(System.in);
+     
+        
+        
+        
  
     for (int i = 1; i <5; i++){
     
@@ -31,6 +37,17 @@ public class JirleidySantos2026 {
         System.out.println("3. Calcular la nota aprobada y reprobada de los productos:" );
         System.out.println("4. Salir:" );
       
+        System.out.println("selecciona una opccion");
+        switch (opcion){
+            case 1:
+                System.out.println("1. Calcular el Promedio de los productos:" );
+                float suma;
+                for (int i = 1; i <5; i++){
+            break;
+                
+        }
+ 
+        }
 
 
         
