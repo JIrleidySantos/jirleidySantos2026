@@ -14,18 +14,19 @@ public class JirleidySantos2026 {
 
     public static void main(String[] args) {
         
-        float [] precios = new float [5] ;
-        float promedioPrecios;
-        float mayor;
-        float menor;
-        int contadorPrecio;
+        float [] notas = new float [5] ;
+        float promed;
+        float notAlta;
+        float notBaja;
+        float aprob;
+        float reprob;
         
         Scanner sc = new Scanner(System.in);
         for (int i = 1; i <5; i++){
     
-        System.out.println("ingrese el precio de los productos ");
-        precios[i]=sc.nextFloat();
-    }    
+        System.out.println("ingrese sus notas ");
+        notas[i]=sc.nextFloat();
+        }    
         System.out.println("--Ingrese unaopcion del 1 al 5 --");
         System.out.println("1. Calcular el Promedio de los productos:" );
         System.out.println("2. Calcular la nota mas alto y mas bajo de los productos:" );
@@ -38,20 +39,31 @@ public class JirleidySantos2026 {
             case 1:
                 float suma=0; 
                 System.out.println("opcion 1 " );
-                for (int i = 1; i <5; i++){
-                    suma=precios[i]+suma;       
+                for (int i = 0; i <5; i++){
+                    suma = notas[i]+suma;
+                    System.out.println("Su promedio es: "+suma);
                 }        
             break;
             case 2:
                 System.out.println("opcion 2 " );
+                float base=0;
+                for (int i = 0; i < 5; i++) {
+                    if (base<notas[i]){
+                        base=notas[i];
+                    }
+                    if (base>notas[i]){
+                        base=notas[i];
+                    }
             break;
             case 3:
                 System.out.println("opcion 3 " );
-            break;
+            break;   
             case 4: 
                 System.out.println("opcion 4 " );
             break;
-            
+            default:
+                throw new AssertionError();
+                
                 
         }
  
